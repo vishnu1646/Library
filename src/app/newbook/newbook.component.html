@@ -1,25 +1,26 @@
+<app-navbar></app-navbar>
 <div class="container">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xx-3">
                     <label for="" class="form-label">Name of Book</label>
-                    <input type="text" class="form-control">
+                    <input name ="name"[(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xx-3">
                     <label for="" class="form-label">Author</label>
-                    <input type="text" class="form-control">
+                    <input author ="name"[(ngModel)]="author" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xx-3">
                     <label for="" class="form-label">Language</label>
-                    <input type="text" class="form-control">
+                    <input language ="Language"[(ngModel)]="Language" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xx-3">
                     <label for="" class="form-label">Date Of Publishing</label>
-                    <input type="text" class="form-control">
+                    <input date ="date"[(ngModel)]="date" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-xl-3 col-xx-3">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click) = "readvalues()" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>
